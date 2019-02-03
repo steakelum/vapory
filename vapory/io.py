@@ -106,7 +106,7 @@ def render_povstring(string, outfile=None, height=None, width=None,
     if height is not None: cmd.append('+H%d'%height)
     if width is not None: cmd.append('+W%d'%width)
     if quality is not None: cmd.append('+Q%d'%quality)
-    if antialiasing is not None: cmd.append('+A%f'%antialiasing)
+    if antialiasing is 1 or antialiasing is True: cmd.append('+A')#%f'%antialiasing)
     if output_alpha: cmd.append('Output_Alpha=on')
     if not show_window:
         cmd.append('-D')

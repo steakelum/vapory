@@ -1139,3 +1139,6 @@ class DensityMap(POVRayMap):
          DENSITY_MAP_IDENTIFIER | DENSITY_MAP_ENTRY...
        DENSITY_MAP_ENTRY:
          *[ 'Value', DENSITY_BODY ]"""
+
+class Function(POVRayElement):
+    """ Function()"""
